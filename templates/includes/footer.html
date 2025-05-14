@@ -1,0 +1,104 @@
+{% load static %}
+
+<!-- Footer -->
+<footer class="footer">
+    <style>
+        /* Footer text color */
+        .footer, .footer p, .footer a {
+            color: black !important;
+        }
+
+        .footer .footer-title {
+            color: black !important;
+        }
+
+        .footer .footer-widget ul li a {
+            color: black !important;
+        }
+
+        .footer .footer-about-content p {
+            color: black !important;
+        }
+
+        .footer .footer-contact-info p {
+            color: black !important;
+        }
+
+        .footer .footer-contact-info .footer-address p {
+            color: black !important;
+        }
+    </style>
+
+    <!-- Footer Top -->
+    <div class="footer-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Footer Widget -->
+                    <div class="footer-widget footer-about">
+                        <div class="footer-logo">
+                            <img src="{% static 'assets/img/logo2.svg' %}" alt="Onychiascan">
+                        </div>
+                        <div class="footer-about-content">
+                            <p>Find and book appointments with the best nail doctors. Quality healthcare made accessible and convenient.</p>
+                        </div>
+                    </div>
+                    <!-- /Footer Widget -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Footer Widget -->
+                    <div class="footer-widget footer-menu">
+                        <h2 class="footer-title">For Patients</h2>
+                        <ul>
+                            
+                            <li><a href="{% url 'accounts:login' %}"><i class="fas fa-angle-double-right"></i> Login</a></li>
+                            <li><a href="{% url 'accounts:patient-register' %}"><i class="fas fa-angle-double-right"></i> Register</a></li>
+                            {% if user.is_authenticated and user.role == 'patient' %}
+                                <li><a href="{% url 'patients:dashboard' %}"><i class="fas fa-angle-double-right"></i> Patient Dashboard</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <!-- /Footer Widget -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Footer Widget -->
+                    <div class="footer-widget footer-menu">
+                        <h2 class="footer-title">For Anyone</h2>
+                        <ul>
+                            <li><a href="{% url 'doctors:list' %}"><i class="fas fa-angle-double-right"></i> Search for Doctors</a></li>
+                            <li><a href="{% url 'model:model' %}"><i class="fas fa-angle-double-right"></i> Predict Nail Disease</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Footer Widget -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Footer Widget -->
+                    <div class="footer-widget footer-contact">
+                        <h2 class="footer-title">Contact Us</h2>
+                        <div class="footer-contact-info">
+                            <div class="footer-address">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>Delhi, India</p>
+                            </div>
+                            <p>
+                                <i class="fas fa-phone-alt"></i>
+                                +91-1234567890
+                            </p>
+                            <p class="mb-0">
+                                <i class="fas fa-envelope"></i>
+                                info@Onychiascan.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /Footer Widget -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer Top -->
+
+</footer>
+<!-- /Footer -->

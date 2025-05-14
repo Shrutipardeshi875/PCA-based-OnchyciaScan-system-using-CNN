@@ -1,0 +1,482 @@
+[
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor1",
+      "email": "ritu.iyer@example.com",
+      "first_name": "Ritu",
+      "last_name": "Iyer",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "phone": "+91-9813687924",
+      "dob": "1972-09-12",
+      "about": "MBBS from JIPMER. 18 years of experience in General Nail Consultancy.",
+      "specialization": "Acral Lentiginous Melanoma",
+      "gender": "female",
+      "address": "House 64, Road 15, Connaught Place",
+      "city": "Chennai",
+      "state": "Maharashtra",
+      "postal_code": "498017",
+      "country": "India",
+      "price_per_consultation": 1947,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor2",
+      "email": "rajesh.jain@example.com",
+      "first_name": "Rajesh",
+      "last_name": "Jain",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "phone": "+91-9884191262",
+      "dob": "1987-08-19",
+      "about": "MBBS from JIPMER. 9 years of experience in Clubbing.",
+      "specialization": "Blue Finger",
+      "gender": "male",
+      "address": "House 10, Road 5, Indiranagar",
+      "city": "Delhi",
+      "state": "Tamil Nadu",
+      "postal_code": "799821",
+      "country": "India",
+      "price_per_consultation": 926,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor3",
+      "email": "suresh.patel@example.com",
+      "first_name": "Suresh",
+      "last_name": "Patel",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "phone": "+91-9835412640",
+      "dob": "1960-08-22",
+      "about": "MBBS from Grant Medical College. 9 years of experience in Blue Finger.",
+      "specialization": "Acral Lentiginous Melanoma",
+      "gender": "male",
+      "address": "House 82, Road 6, Gandhinagar",
+      "city": "Jaipur",
+      "state": "West Bengal",
+      "postal_code": "355133",
+      "country": "India",
+      "price_per_consultation": 1133,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor4",
+      "email": "rohit.singh@example.com",
+      "first_name": "Rohit",
+      "last_name": "Singh",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "phone": "+91-9838800694",
+      "dob": "1980-09-26",
+      "about": "MBBS from JIPMER. 17 years of experience in Clubbing.",
+      "specialization": "Blue Finger",
+      "gender": "male",
+      "address": "House 80, Road 4, Gandhinagar",
+      "city": "Mumbai",
+      "state": "Karnataka",
+      "postal_code": "321123",
+      "country": "India",
+      "price_per_consultation": 1540,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor5",
+      "email": "nisha.mehta@example.com",
+      "first_name": "Nisha",
+      "last_name": "Mehta",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "phone": "+91-9841289431",
+      "dob": "1985-12-02",
+      "about": "MBBS from AIIMS Delhi. 18 years of experience in Clubbing.",
+      "specialization": "Acral Lentiginous Melanoma",
+      "gender": "female",
+      "address": "House 63, Road 13, Jayanagar",
+      "city": "Hyderabad",
+      "state": "Uttar Pradesh",
+      "postal_code": "664934",
+      "country": "India",
+      "price_per_consultation": 597,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor6",
+      "email": "anita.jain@example.com",
+      "first_name": "Anita",
+      "last_name": "Jain",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "phone": "+91-9884803696",
+      "dob": "1985-02-24",
+      "about": "MBBS from AIIMS Delhi. 15 years of experience in Clubbing.",
+      "specialization": "General Nail Consultancy",
+      "gender": "female",
+      "address": "House 38, Road 10, Gandhinagar",
+      "city": "Mumbai",
+      "state": "Uttar Pradesh",
+      "postal_code": "533278",
+      "country": "India",
+      "price_per_consultation": 1077,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor7",
+      "email": "arjun.reddy@example.com",
+      "first_name": "Arjun",
+      "last_name": "Reddy",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "phone": "+91-9858759329",
+      "dob": "1982-11-12",
+      "about": "MBBS from AIIMS Delhi. 16 years of experience in Clubbing.",
+      "specialization": "General Nail Consultancy",
+      "gender": "male",
+      "address": "House 79, Road 9, Connaught Place",
+      "city": "Chennai",
+      "state": "Maharashtra",
+      "postal_code": "765384",
+      "country": "India",
+      "price_per_consultation": 1711,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor8",
+      "email": "sunita.sharma@example.com",
+      "first_name": "Sunita",
+      "last_name": "Sharma",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "phone": "+91-9882219272",
+      "dob": "1973-04-25",
+      "about": "MBBS from Grant Medical College. 15 years of experience in Clubbing.",
+      "specialization": "Acral Lentiginous Melanoma",
+      "gender": "female",
+      "address": "House 31, Road 3, Connaught Place",
+      "city": "Pune",
+      "state": "West Bengal",
+      "postal_code": "582825",
+      "country": "India",
+      "price_per_consultation": 1050,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor9",
+      "email": "anil.singh@example.com",
+      "first_name": "Anil",
+      "last_name": "Singh",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "phone": "+91-9824438240",
+      "dob": "1976-06-03",
+      "about": "MBBS from AIIMS Delhi. 12 years of experience in Clubbing.",
+      "specialization": "Acral Lentiginous Melanoma",
+      "gender": "male",
+      "address": "House 40, Road 5, Indiranagar",
+      "city": "Hyderabad",
+      "state": "Uttar Pradesh",
+      "postal_code": "284792",
+      "country": "India",
+      "price_per_consultation": 1784,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor10",
+      "email": "kunal.mehta@example.com",
+      "first_name": "Kunal",
+      "last_name": "Mehta",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "phone": "+91-9877743144",
+      "dob": "1960-12-24",
+      "about": "MBBS from Grant Medical College. 15 years of experience in General Nail Consultancy.",
+      "specialization": "Pitting",
+      "gender": "male",
+      "address": "House 7, Road 7, Indiranagar",
+      "city": "Lucknow",
+      "state": "Rajasthan",
+      "postal_code": "841282",
+      "country": "India",
+      "price_per_consultation": 1763,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor11",
+      "email": "geeta.chauhan@example.com",
+      "first_name": "Geeta",
+      "last_name": "Chauhan",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "phone": "+91-9888912567",
+      "dob": "1963-03-09",
+      "about": "MBBS from CMC Vellore. 6 years of experience in Pitting.",
+      "specialization": "General Nail Consultancy",
+      "gender": "female",
+      "address": "House 70, Road 8, Indiranagar",
+      "city": "Kolkata",
+      "state": "Tamil Nadu",
+      "postal_code": "929779",
+      "country": "India",
+      "price_per_consultation": 568,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor12",
+      "email": "geeta.patel@example.com",
+      "first_name": "Geeta",
+      "last_name": "Patel",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "phone": "+91-9844400883",
+      "dob": "1970-10-11",
+      "about": "MBBS from Grant Medical College. 13 years of experience in Clubbing.",
+      "specialization": "Blue Finger",
+      "gender": "female",
+      "address": "House 8, Road 11, Gandhinagar",
+      "city": "Pune",
+      "state": "West Bengal",
+      "postal_code": "503052",
+      "country": "India",
+      "price_per_consultation": 946,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor13",
+      "email": "suresh.iyer@example.com",
+      "first_name": "Suresh",
+      "last_name": "Iyer",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "phone": "+91-9837229944",
+      "dob": "1981-10-28",
+      "about": "MBBS from JIPMER. 9 years of experience in Onychogryphosis.",
+      "specialization": "Blue Finger",
+      "gender": "male",
+      "address": "House 90, Road 12, Jayanagar",
+      "city": "Kolkata",
+      "state": "Tamil Nadu",
+      "postal_code": "350884",
+      "country": "India",
+      "price_per_consultation": 1665,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor14",
+      "email": "kavita.iyer@example.com",
+      "first_name": "Kavita",
+      "last_name": "Iyer",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "phone": "+91-9841527882",
+      "dob": "1989-01-23",
+      "about": "MBBS from Grant Medical College. 8 years of experience in Blue Finger.",
+      "specialization": "Onychogryphosis",
+      "gender": "female",
+      "address": "House 56, Road 5, Gandhinagar",
+      "city": "Lucknow",
+      "state": "Maharashtra",
+      "postal_code": "298169",
+      "country": "India",
+      "price_per_consultation": 1845,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor15",
+      "email": "anil.agarwal@example.com",
+      "first_name": "Anil",
+      "last_name": "Agarwal",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "phone": "+91-9823288624",
+      "dob": "1964-04-22",
+      "about": "MBBS from JIPMER. 16 years of experience in General Nail Consultancy.",
+      "specialization": "Acral Lentiginous Melanoma",
+      "gender": "male",
+      "address": "House 3, Road 6, Gandhinagar",
+      "city": "Hyderabad",
+      "state": "Karnataka",
+      "postal_code": "183154",
+      "country": "India",
+      "price_per_consultation": 516,
+      "is_available": true
+    }
+  }
+]

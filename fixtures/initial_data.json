@@ -1,0 +1,482 @@
+[
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor1",
+      "email": "geeta.thakur@example.com",
+      "first_name": "Geeta",
+      "last_name": "Thakur",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "phone": "+91-9814443304",
+      "dob": "1960-05-12",
+      "about": "MBBS from CMC Vellore. 6 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 83, Road 4, Indiranagar",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "postal_code": "358537",
+      "country": "India",
+      "price_per_consultation": 1403,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor2",
+      "email": "manoj.gupta@example.com",
+      "first_name": "Manoj",
+      "last_name": "Gupta",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "phone": "+91-9890450893",
+      "dob": "1974-09-22",
+      "about": "MBBS from AIIMS Delhi. 6 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 35, Road 2, Indiranagar",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "postal_code": "872202",
+      "country": "India",
+      "price_per_consultation": 1896,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor3",
+      "email": "pooja.verma@example.com",
+      "first_name": "Pooja",
+      "last_name": "Verma",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "phone": "+91-9822198862",
+      "dob": "1976-10-12",
+      "about": "MBBS from JIPMER. 6 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 21, Road 2, Connaught Place",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "postal_code": "878622",
+      "country": "India",
+      "price_per_consultation": 734,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor4",
+      "email": "pooja.iyer@example.com",
+      "first_name": "Pooja",
+      "last_name": "Iyer",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "phone": "+91-9897952501",
+      "dob": "1987-03-28",
+      "about": "MBBS from Grant Medical College. 19 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 95, Road 2, Jayanagar",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "postal_code": "617422",
+      "country": "India",
+      "price_per_consultation": 1433,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor5",
+      "email": "geeta.agarwal@example.com",
+      "first_name": "Geeta",
+      "last_name": "Agarwal",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "phone": "+91-9826159704",
+      "dob": "1970-07-27",
+      "about": "MBBS from AIIMS Delhi. 16 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 38, Road 3, Jayanagar",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "postal_code": "434720",
+      "country": "India",
+      "price_per_consultation": 1464,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor6",
+      "email": "anita.sharma@example.com",
+      "first_name": "Anita",
+      "last_name": "Sharma",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "phone": "+91-9862847153",
+      "dob": "1990-06-26",
+      "about": "MBBS from CMC Vellore. 11 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 56, Road 11, Gandhinagar",
+      "city": "Delhi",
+      "state": "Delhi",
+      "postal_code": "431840",
+      "country": "India",
+      "price_per_consultation": 640,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor7",
+      "email": "priya.verma@example.com",
+      "first_name": "Priya",
+      "last_name": "Verma",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "phone": "+91-9828074468",
+      "dob": "1971-03-16",
+      "about": "MBBS from AIIMS Delhi. 7 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 9, Road 15, Gandhinagar",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "postal_code": "950506",
+      "country": "India",
+      "price_per_consultation": 1769,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor8",
+      "email": "anita.agarwal@example.com",
+      "first_name": "Anita",
+      "last_name": "Agarwal",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "phone": "+91-9833174824",
+      "dob": "1963-02-09",
+      "about": "MBBS from Grant Medical College. 9 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 86, Road 5, Jayanagar",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "postal_code": "196826",
+      "country": "India",
+      "price_per_consultation": 1466,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor9",
+      "email": "kunal.patel@example.com",
+      "first_name": "Kunal",
+      "last_name": "Patel",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "phone": "+91-9851621028",
+      "dob": "1975-05-26",
+      "about": "MBBS from AIIMS Delhi. 9 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 17, Road 14, Connaught Place",
+      "city": "Delhi",
+      "state": "Delhi",
+      "postal_code": "907511",
+      "country": "India",
+      "price_per_consultation": 1541,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor10",
+      "email": "suresh.thakur@example.com",
+      "first_name": "Suresh",
+      "last_name": "Thakur",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "phone": "+91-9884320313",
+      "dob": "1985-12-11",
+      "about": "MBBS from CMC Vellore. 9 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 7, Road 4, Jayanagar",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "postal_code": "505812",
+      "country": "India",
+      "price_per_consultation": 752,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor11",
+      "email": "karan.kapoor@example.com",
+      "first_name": "Karan",
+      "last_name": "Kapoor",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "phone": "+91-9833220008",
+      "dob": "1985-11-03",
+      "about": "MBBS from JIPMER. 13 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 92, Road 9, Connaught Place",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "postal_code": "532336",
+      "country": "India",
+      "price_per_consultation": 1522,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor12",
+      "email": "mahesh.iyer@example.com",
+      "first_name": "Mahesh",
+      "last_name": "Iyer",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "phone": "+91-9842036228",
+      "dob": "1967-08-15",
+      "about": "MBBS from CMC Vellore. 12 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 53, Road 11, Connaught Place",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "postal_code": "423307",
+      "country": "India",
+      "price_per_consultation": 1362,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor13",
+      "email": "neha.mehta@example.com",
+      "first_name": "Neha",
+      "last_name": "Mehta",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "phone": "+91-9877604381",
+      "dob": "1967-11-11",
+      "about": "MBBS from JIPMER. 11 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "female",
+      "address": "House 89, Road 9, Indiranagar",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "postal_code": "941668",
+      "country": "India",
+      "price_per_consultation": 1416,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor14",
+      "email": "amit.agarwal@example.com",
+      "first_name": "Amit",
+      "last_name": "Agarwal",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "phone": "+91-9860979454",
+      "dob": "1961-11-03",
+      "about": "MBBS from CMC Vellore. 10 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 99, Road 11, Jayanagar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "postal_code": "689599",
+      "country": "India",
+      "price_per_consultation": 1338,
+      "is_available": true
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$HQyGxzxfOxv6nLKI8zF$w9Nmz1Rxm1fPY1HzJ2MU7MgKBfTJ1RfF3q9M1wJvXvQ=",
+      "username": "doctor15",
+      "email": "anil.malhotra@example.com",
+      "first_name": "Anil",
+      "last_name": "Malhotra",
+      "role": "doctor",
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "accounts.profile",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "phone": "+91-9810756643",
+      "dob": "1988-01-10",
+      "about": "MBBS from Grant Medical College. 20 years of experience in Dermatologist Specialist.",
+      "specialization": "Dermatologist Specialist",
+      "gender": "male",
+      "address": "House 1, Road 12, Indiranagar",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "postal_code": "104033",
+      "country": "India",
+      "price_per_consultation": 1846,
+      "is_available": true
+    }
+  }
+]

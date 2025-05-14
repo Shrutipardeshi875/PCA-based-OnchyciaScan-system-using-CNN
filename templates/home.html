@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}sta:
+    Home
+{% endblock %}
+
+{% block content %}
+ 
+<section style="background: url('{% static "assets/img/bg.png" %}') no-repeat center center/cover; padding: 100px 20px; color: white; font-family: Arial, sans-serif; height: 100vh; display: flex; align-items: center;">
+    <div style="max-width: 600px; text-align: left; margin-left: 50px;">
+      <h1 style="color: #a23752; font-size: 3rem; margin-bottom: 20px;">Healthy Nails, Healthy You!</h1>
+      <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 30px; color: #a36776;">
+        Our platform is designed to help you understand and identify nail-related issues quickly and accurately.<br>Start Your Journey to Better Nail Health Today!
+      </p>
+      <button style="background-color: #a23752; color: white; border: none; padding: 15px 30px; font-size: 1rem; border-radius: 5px; cursor: pointer;">
+        <a href="{% url 'doctors:list' %}" style="color: white; text-decoration: none; font-weight: bold;">Book An Appointment</a>
+      </button>
+      
+    </div>
+  </section>
+  
+  
+
+    <!-- Home Banner -->
+    <section class="section section-search">
+        <div class="container-fluid">
+            <div class="banner-wrapper">
+                <div class="banner-header text-center">
+                    <h1>Find and Book Appointments with Top Doctors</h1>
+                    <p>Get instant access to trusted doctors in your area for quality healthcare.</p>
+                </div>
+
+                <!-- Search -->
+                <div class="search-box">
+                    <form action="{% url 'doctors:list' %}" method="get">
+                        <div class="form-group search-location">
+                            <input type="text" name="location" class="form-control" placeholder="Enter City or Division">
+                            <span class="form-text">Find doctors in your area</span>
+                        </div>
+                        <div class="form-group search-info">
+                            <input type="text" name="q" class="form-control" placeholder="Search by Doctor Name, Specialization, or Symptoms">
+                            <span class="form-text">e.g. Nail Disease Specialist, Blue Finger, Dr. Sharma</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary search-btn"><i class="fas fa-search"></i> <span>Search</span></button>
+                    </form>
+                </div>
+                <!-- /Search -->
+
+            </div>
+        </div>
+    </section>
+    <!-- /Home Banner -->
+
+    <!-- Popular Section -->
+    <section class="section section-doctor">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="section-header">
+                        <h2>Book Appointments Online</h2>
+                        <p>Connect with Expert Healthcare Professionals</p>
+                    </div>
+                    <div class="about-content">
+                        <p>Access expert care for nail health from the comfort of your home. Our platform connects you with experienced nail disease specialists who provide personalized consultations.</p>
+                        <p>Choose from a trusted network of verified experts, explore their availability in real-time, and book appointments instantly. We are dedicated to making specialized nail care accessible and convenient for everyone in India.</p>
+                        <a href="{% url 'doctors:list' %}">View all doctors</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="doctor-slider slider">
+
+                        {% for doctor in doctors %}
+                            <!-- Doctor Widget -->
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a href="{% url 'doctors:doctor-profile' doctor.username %}">
+                                        <img class="img-fluid" alt="Doctor Image" src="{{ doctor.profile.image }}">
+                                    </a>
+                                    <a href="javascript:void(0)" class="fav-btn">
+                                        <i class="far fa-bookmark"></i>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <h3 class="title">
+                                        <a href="{% url 'doctors:doctor-profile' doctor.username %}">Dr. {{ doctor.get_full_name }}</a>
+                                        <i class="fas fa-check-circle verified"></i>
+                                    </h3>
+                                    <p class="speciality">{{ doctor.profile.specialization }}</p>
+                                    <ul class="available-info">
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i> {{ doctor.profile.city }}, {{ doctor.profile.country }}
+                                        </li>
+                                        <li>
+                                            <i class="far fa-money-bill-alt"></i> ₹{{ doctor.profile.price_per_consultation }}
+                                            <i class="fas fa-info-circle" data-toggle="tooltip" title="Consultation Fee"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="row row-sm">
+                                        <div class="col-6">
+                                            <a href="{% url 'doctors:doctor-profile' doctor.username %}" class="btn view-btn">View Profile</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="{% url 'bookings:doctor-booking-view' doctor.username %}" class="btn book-btn">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Doctor Widget -->
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Popular Section -->
+    <section id="about-us" class="section about-us" style="background-color: #fcfdff; padding: 50px 0;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-8 about-content">
+                    <div class="section-header text-left">
+                        <h2>About Us</h2>
+                    </div>
+                    <p>
+                        Welcome to <strong>OnychiaScan</strong>, India’s premier platform dedicated to nail health and wellness. 
+                        We specialize in connecting patients with top dermatologists and experts in nail diseases, ensuring 
+                        access to the highest quality care.
+                    </p>
+                    <p>
+                        At <strong>OnychiaScan</strong>, we understand that nail health is a vital aspect of overall well-being. 
+                        Whether you’re dealing with conditions like acral lentiginous melanoma, onychogryphosis, blue finger, 
+                        clubbing, pitting, or seeking general nail consultations, our platform is designed to cater to your specific needs.
+                    </p>
+                    <p>
+                        Our mission is to make expert nail care accessible, convenient, and affordable for everyone. With a 
+                        network of verified specialists, transparent consultation fees in INR, and easy appointment booking, 
+                        we strive to empower individuals with reliable healthcare solutions.
+                    </p>
+                    <p>We are committed to:</p>
+                    <ul>
+                        <li><strong>Providing personalized and precise care</strong> for all nail-related concerns.</li>
+                        <li><strong>Ensuring a seamless and secure platform</strong> for booking consultations and accessing expert advice.</li>
+                        <li><strong>Raising awareness about nail diseases</strong> and the importance of early diagnosis and treatment.</li>
+                    </ul>
+                    <p>
+                        Discover a better way to care for your nails with <strong>OnychiaScan</strong>—your trusted partner in nail health.
+                    </p>
+                </div>
+                <!-- Image Content -->
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'assets/img/banner.png' %}" class="img-fluid" alt="Feature" style="max-height: 400px; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="section section-features" style="background-color: #f8f9fa; padding: 50px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 features-img">
+                    <img src="{% static 'assets/img/features/feature.png' %}" class="img-fluid" alt="Feature">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-header">
+                        <h2 class="mt-2">Why choose Onychiascan?</h2>
+                        <p>We provide comprehensive healthcare solutions with a focus on quality and accessibility</p>
+                    </div>
+                    <div class="features-slider slider">
+                        <div class="feature-item text-center">
+                            <img src="{% static 'assets/img/features/feature-01.jpg' %}" class="img-fluid" alt="Verified Doctors">
+                            <p>Verified Doctors</p>
+                        </div>
+
+                        <div class="feature-item text-center">
+                            <img src="{% static 'assets/img/features/feature-02.jpg' %}" class="img-fluid" alt="Easy Booking">
+                            <p>Easy Booking</p>
+                        </div>
+
+                        <div class="feature-item text-center">
+                            <img src="{% static 'assets/img/features/feature-03.jpg' %}" class="img-fluid" alt="Digital Records">
+                            <p>Digital Records</p>
+                        </div>
+
+                        <div class="feature-item text-center">
+                            <img src="{% static 'assets/img/features/feature-04.jpg' %}" class="img-fluid" alt="Instant Access">
+                            <p>Instant Access</p>
+                        </div>
+
+                        <div class="feature-item text-center">
+                            <img src="{% static 'assets/img/features/feature-05.jpg' %}" class="img-fluid" alt="Secure Platform">
+                            <p>Secure Platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Features Section -->
+
+{% endblock %}
